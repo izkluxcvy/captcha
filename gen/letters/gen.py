@@ -28,5 +28,5 @@ for i in "ABCDEFGHJKMNPQRSTUVWXYZ23456789abcdefghijklmnpqrstuvwxyz":
 	clean("screenshot.png")
 
 dst = "../src/fonts/font_default.json"
-open(dst, "wt").write(json.dumps(data))
+open(dst, "wt").write(json.dumps(data, ensure_ascii = False))
 print ("data written to " + dst)
