@@ -24,7 +24,6 @@ for i in "ABCDEFGHJKMNPQRSTUVWXYZ23456789abcdefghijklmnpqrstuvwxyz":
 		sys.exit(1)
 	subprocess.call(["convert", "-trim", "screenshot.png", "screenshot.png"])
 	data[i] = base64.b64encode(open("screenshot.png", "rb").read()).decode("utf-8")
-	sys.exit(0)
 	clean("index.html")
 	clean("screenshot.png")
 
